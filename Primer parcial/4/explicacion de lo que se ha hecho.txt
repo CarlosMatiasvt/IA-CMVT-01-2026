@@ -1,0 +1,8 @@
+Proceso desarrollado
+se cargo el datasets a nuestro visual.
+hemos mostrado las caracteristicas
+hemos verificados si existen valores nulos 
+hemos dividido un 75% para entrenamiento y el resto para probar.
+Se realizó la carga y exploración del dataset, seguido de la limpieza y transformación de variables. Posteriormente, los datos fueron normalizados para mejorar el rendimiento de los modelos.
+
+Se dividió el dataset en un 75% para entrenamiento y 25% para prueba, cumpliendo con el requerimiento del enunciado.
