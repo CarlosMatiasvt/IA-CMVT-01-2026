@@ -1,0 +1,42 @@
+. Dataset: Adult (Census Income)
+Extraído del censo de EE. UU. de 1994, su objetivo es predecir el nivel socioeconómico.
+
+Características Detalladas
+age (edad): Edad del individuo (Numérica).
+
+workclass: Sector de empleo (Private, Self-emp-not-inc, etc.).
+
+fnlwgt (final weight): Estimación de cuántas personas representa esta fila según el censo (Numérica).
+
+education: Máximo nivel de estudios (Bachelors, Masters, 11th, etc.).
+
+education-num: Representación numérica del nivel educativo (Años de estudio).
+
+marital-status: Estado civil (Married-civ-spouse, Divorced, etc.).
+
+occupation: Tipo de oficio (Tech-support, Sales, Exec-managerial, etc.).
+
+relationship: Rol familiar (Wife, Husband, Own-child, etc.).
+
+race: Grupo étnico (White, Black, Asian-Pac-Islander, etc.).
+
+sex: Género (Female, Male).
+
+capital-gain: Ganancias financieras anuales (Numérica).
+
+capital-loss: Pérdidas financieras anuales (Numérica).
+
+hours-per-week: Horas de trabajo semanales (Numérica).
+
+native-country: País de origen.
+
+Label (Objetivo): Ingresos brutos anuales (>50K o <=50K).
+
+Análisis de Datos y Calidad
+Datos Nulos: Contiene valores faltantes (identificados como ? en los archivos) en workclass, occupation y native-country.
+
+Solución: No los eliminaremos. Aplicaremos la Moda (el valor más frecuente) para rellenar estos campos, manteniendo la integridad del dataset.
+
+Balanceo: Está desbalanceado. El 76.07% gana <=50K y solo el 23.93% gana >50K.
+
+Plan de Inferencia: Entrenar una red neuronal multicapa para clasificar si una persona es de "altos ingresos", permitiendo predecir el potencial económico de nuevos perfiles.
